@@ -6,8 +6,7 @@
 ---
 
 ## 🚀 Live Demo
-🔗 https://your-live-link-here.vercel.app  
-*(Replace with your actual deployed link)*
+### 🔗 https://forexlyglobal.vercel.app/
 
 ---
 
