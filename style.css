@@ -1,0 +1,389 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*  body */
+body {
+  min-height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #8e2de2, #4a00e0);
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+
+body.dark {
+  background: linear-gradient(135deg, #220937, #130136);
+  color: #f5f5f5;
+}
+
+/*   header  */
+.header {
+  max-width: 900px;
+  width: 100%;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+body.dark .header {
+  background: #1a0f2e;
+}
+
+.header-logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo h1 {
+  color: #4a00e0;
+  font-weight: 800;
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+body.dark .header-logo h1 {
+  color: #cdb7ff;
+}
+
+.toggle {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  height: 1.7rem;
+  width: 1.7rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*  seo content */
+.seo-content {
+  margin-top: 0.8rem;
+}
+
+.seo-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #555;
+}
+
+body.dark .seo-content p {
+  color: #ddd;
+}
+
+/*  main container */
+.container {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 1.5rem;
+  max-width: 900px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: transform 0.3s ease;
+}
+
+body.dark .container {
+  background: #1a0f2e;
+}
+
+.container:hover {
+  transform: translateY(-4px);
+}
+
+.container h2 {
+  text-align: center;
+  color: #4a00e0;
+  margin-bottom: 1.5rem;
+}
+
+body.dark .container h2 {
+  color: #cdb7ff;
+}
+
+/*  form  */
+.myform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.amount p,
+.from p,
+.to p {
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+  color: #555;
+}
+
+body.dark .amount p,
+body.dark .from p,
+body.dark .to p {
+  color: #ddd;
+}
+
+.myform input {
+  width: 100%;
+  height: 3rem;
+  border-radius: 0.75rem;
+  border: 1px solid #ddd;
+  padding: 0 0.8rem;
+  font-size: 1rem;
+}
+
+.myform input:focus {
+  border-color: #4a00e0;
+  outline: none;
+}
+
+/*   dropdown  */
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown i {
+  font-size: 1.4rem;
+  color: #4a00e0;
+  margin-top: 1.2rem;
+  transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+  transform: rotate(180deg);
+}
+
+.select-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  background: #fafafa;
+}
+
+body.dark .select-container {
+  background: #2a1848;
+  border-color: #3c2a6d;
+}
+
+.select-container img {
+  width: 2rem;
+  border-radius: 5px;
+}
+
+.select-container select {
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  outline: none;
+  color: inherit;
+}
+
+/*  result  */
+.msg {
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: #f3f0ff;
+  color: #4a00e0;
+  padding: 0.7rem;
+  border-radius: 0.75rem;
+}
+
+body.dark .msg {
+  background: #2a1848;
+  color: #cdb7ff;
+}
+
+/*  button  */
+.myform button {
+  height: 3rem;
+  border-radius: 0.75rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: 600;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: #fff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myform button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(37,117,252,0.35);
+}
+
+/*  footer  */
+.footer {
+  max-width: 900px;
+  width: 100%;
+  margin-top: 1.5rem;
+  background: #ffffff;
+  border-radius: 1.5rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.footer h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.6rem;
+  color: #4a00e0;
+}
+
+.footer p,
+.footer a {
+  font-size: 0.9rem;
+  color: #555;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer a:hover {
+  color: #4a00e0;
+  text-decoration: underline;
+}
+
+body.dark .footer {
+  background: #1a0f2e;
+}
+
+body.dark .footer h2 {
+  color: #cdb7ff;
+}
+
+body.dark .footer p,
+body.dark .footer a {
+  color: #ddd;
+}
+
+.footer li{
+  list-style: none;
+  font-size: small;
+}
+
+.footer i{
+  font-size: x-small;
+}
+
+.footer .footer-seo{
+  grid-column: 1/4;
+  text-align: left;
+}
+
+/* footer bottom text */
+.footer .greeting{
+  grid-column: 1/4;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+}
+
+
+body.dark .greeting {
+  color: #aaa;
+}
+
+/*  responsive  */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  .header-logo h1 {
+    font-size: 1.5rem;
+    font-weight: 100000;
+  }
+
+  .toggle {
+    height: 1.7rem;
+    width: 1.7rem;
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 1.3rem;
+    font-weight: bolder;
+  }
+
+  .header,
+  .container,
+  .footer {
+    padding: 1rem;
+  }
+
+  /*  form  */
+.myform {
+  gap: 0.5rem;
+}
+
+.myform input {
+  height: 2.5rem;
+}
+
+.dropdown i {
+  margin-top: .2rem;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.dropdown i:hover {
+  transform: rotate(270deg);
+}
+
+
+.select-container {
+  border-radius: 0.75rem;
+  padding: 0.4rem 0.9rem;
+  width: 40vw;
+}
+
+  .dropdown {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .footer li{
+    white-space: nowrap;
+  }
+ 
+
+  .footer .footer-project-link{
+    grid-column: 1/3;
+  }
+
+  .footer .footer-social-link {
+    text-align: right;
+  }
+  
+  .footer .legal-section {
+    /* background-color: red; */
+    grid-column: 1/4;
+  }
+}
+
+
+/* END */
