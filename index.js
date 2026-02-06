@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     //fatching rate value
-    const updateExchangeRata = async () => {
+    const updateExchangeRate = async () => {
         let amValue = amount.value;
         if (amValue === "" || amValue < 1) {
             amValue = 1;
@@ -97,7 +97,7 @@ document.addEventListener("DOMContentLoaded", () => {
             msg.innerText = `${amValue} ${fromCurr.value} = ${finalAmount} ${toCurr.value}`;
 
         } catch (error) {
-            msg.innerText = "Error fetching exchange rate ❌";
+            msg.innerText = "Unable to fetch exchange rates at the moment. Please try again shortly.";
             console.error(error);
         }
 
@@ -114,8 +114,9 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     
 
+
         const resetfunction = () => {
-            // form.reset();
+            form.reset();
             
               amount.value = 1;
               fromCurr.value = "USD";
@@ -125,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
               updateFlag(toCurr);
             
               msg.innerText = msg.innerText ;     // clean UI
-              updateExchangeRata();  // fetch fresh rate
+              updateExchangeRate();  // fetch fresh rate
         };
         
             if (resetbtn) {
@@ -135,19 +136,18 @@ document.addEventListener("DOMContentLoaded", () => {
               });
             }
 
+    
+
         // Button click handler
     btn.addEventListener("click", (evt) => {
     evt.preventDefault(); //  all automatic work be closed
-    updateExchangeRata();
+    updateExchangeRate();
     });
     
     // Auto-update when page loads
         window.addEventListener("load", () => {
-        updateExchangeRata();
+        updateExchangeRate();
         });
-
             
-
 })
-
-/*  END*/
+/* END */
