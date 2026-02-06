@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", () => {
     ///
     const modebtn = $("#toggle-btn");
     const body = document.body;
-    const form = $(".myform")
+    
     
 
     // page load par theme check
@@ -116,7 +116,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         const resetfunction = () => {
-            form.reset();
             
               amount.value = 1;
               fromCurr.value = "USD";
@@ -151,3 +150,4 @@ document.addEventListener("DOMContentLoaded", () => {
             
 })
 /* END */
+
