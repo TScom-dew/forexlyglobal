@@ -276,7 +276,8 @@ body.dark .footer a {
 }
 
 .legal-section a{
-    text-decoration: none;
+    text-decoration: underline;
+    color: #ddd;
 }
 
 .footer li{
@@ -384,7 +385,7 @@ body.dark .greeting {
   }
 
   .footer .footer-social-link {
-    text-align: right;
+    text-align: left;
   }
   
   .footer .legal-section {
@@ -395,4 +396,5 @@ body.dark .greeting {
 
 
 /* END */
+
 
