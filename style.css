@@ -275,6 +275,10 @@ body.dark .footer a {
   color: #ddd;
 }
 
+.legal-section a{
+    text-decoration: none;
+}
+
 .footer li{
   list-style: none;
   font-size: small;
@@ -282,6 +286,7 @@ body.dark .footer a {
 
 .footer i{
   font-size: x-small;
+  margin:0px 5px;
 }
 
 .footer .footer-seo{
@@ -302,6 +307,7 @@ body.dark .footer a {
 body.dark .greeting {
   color: #aaa;
 }
+
 
 /*  responsive  */
 @media (max-width: 600px) {
@@ -369,8 +375,10 @@ body.dark .greeting {
   .footer li{
     white-space: nowrap;
   }
+   .footer i{
+     margin:0px;  
+   }
  
-
   .footer .footer-project-link{
     grid-column: 1/3;
   }
@@ -387,3 +395,4 @@ body.dark .greeting {
 
 
 /* END */
+
