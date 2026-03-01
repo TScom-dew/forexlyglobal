@@ -312,7 +312,11 @@ body.dark .greeting {
 }
 .legal-section a:hover{
     text-decoration:none;
-    color: #4a00e0;
+    color: light-green;
+}
+.legal-section a:active{
+    text-decoration:underline;
+    color: light-red;
 }
 
 /*  responsive  */
@@ -401,6 +405,7 @@ body.dark .greeting {
 
 
 /* END */
+
 
 
 
