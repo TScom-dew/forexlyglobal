@@ -275,10 +275,6 @@ body.dark .footer a {
   color: #ddd;
 }
 
-.legal-section a{
-    text-decoration: underline;
-    color: #ddd;
-}
 
 .footer li{
   list-style: none;
@@ -307,6 +303,11 @@ body.dark .footer a {
 
 body.dark .greeting {
   color: #aaa;
+}
+
+.legal-section a{
+    text-decoration: underline;
+    color: #4a00e0;
 }
 
 
@@ -396,5 +397,6 @@ body.dark .greeting {
 
 
 /* END */
+
 
 
