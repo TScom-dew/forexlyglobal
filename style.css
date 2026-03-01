@@ -308,8 +308,12 @@ body.dark .greeting {
 .legal-section a{
     text-decoration: underline;
     color: #4a00e0;
+  transition:text-decoration 0.25s  ease-in, color 0.25s  ease-in;
 }
-
+.legal-section a:hover{
+    text-decoration:none;
+    color: #4a00e0;
+}
 
 /*  responsive  */
 @media (max-width: 600px) {
@@ -397,6 +401,7 @@ body.dark .greeting {
 
 
 /* END */
+
 
 
 
